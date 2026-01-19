@@ -1,4 +1,6 @@
 # CodingVibes – Java Swing Course Management Simulation
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white)
+![Java Swing](https://img.shields.io/badge/Java_Swing-007396?style=flat-square&logo=java&logoColor=white)
 
 CodingVibes is a Java Swing–based desktop application developed as part of academic coursework. The project simulates a course purchasing and management system using a menu-driven graphical interface. It focuses on application flow design, role-based access, and event-driven programming rather than real-world transactions.
 
