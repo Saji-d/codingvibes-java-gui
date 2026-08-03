@@ -1,78 +1,237 @@
-# CodingVibes – Java Swing Course Management Simulation
-![Java](https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=white)
-![Java Swing](https://img.shields.io/badge/Java_Swing-2C2255?logo=java&logoColor=white)
+# CodingVibes – Java Swing Course Management System
 
-CodingVibes is a Java Swing–based desktop application developed as part of academic coursework. The project simulates a course purchasing and management system using a menu-driven graphical interface. It focuses on application flow design, role-based access, and event-driven programming rather than real-world transactions.
+<p align="center">
 
-The system includes separate User and Admin modes and demonstrates how a real-world course platform might function at a conceptual level.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/Java%20Swing-GUI-blue?style=for-the-badge)
+![OOP](https://img.shields.io/badge/OOP-Object%20Oriented-success?style=for-the-badge)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
----
+</p>
 
-## ✨ Features
+A desktop-based **Course Management System** developed using **Java Swing** as part of academic coursework. The application simulates the workflow of an online learning platform where users can browse programming courses, manage a shopping cart, simulate purchases, and where administrators can manage users through a dedicated dashboard.
 
-### User Mode
-- Graphical user interface built using Java Swing
-- Browse available courses through a structured menu
-- Select multiple courses and add them to a **simulated shopping cart**
-- View selected courses in the cart
-- Remove courses from the cart if no longer needed
-- Proceed through a **simulated purchase workflow**
-- Choose between simulated payment options:
-  - Card payment (simulation only)
-  - Mobile payment (simulation only)
-- View an **About** section describing the application
-- Access a **Contact Us** section displaying simulated:
-  - Office location
-  - Email address
-  - Contact number
-- View a **Reviews** section showing predefined customer feedback (static reviews)
-
-> Note: All purchase, payment, contact, and review functionalities are simulated and do not perform real transactions or communications.
+The project demonstrates **Object-Oriented Programming (OOP)** principles, **event-driven programming**, modular GUI design, and role-based application flow.
 
 ---
 
-### Admin Mode
-- Separate admin interface with restricted access
-- Add new users to the system
-- Update existing user information
-- Delete users from the system
-- Modify and manage user records through admin controls
+# ✨ Features
+
+## 👤 User Module
+
+- Secure user login interface
+- Browse programming courses
+- Course detail pages
+- Add courses to shopping cart
+- Remove courses from cart
+- Simulated checkout process
+- Multiple payment options
+- Contact page
+- About section
+- Customer reviews page
+- Responsive menu-driven navigation
 
 ---
 
-### General
-- Role-based system with distinct User and Admin functionalities
-- Event-driven application design using Java Swing components
-- Menu-driven workflow that simulates real-world application behavior
-- Modular source code structure for clarity and maintainability
+## 🛡️ Admin Module
+
+- Separate administrator login
+- Admin dashboard
+- Add new users
+- Remove existing users
+- View registered users
+- Add developers
+- User information management
 
 ---
 
-## 🛠 Technologies Used
+## ⚙️ Application Highlights
+
+- Java Swing graphical interface
+- Event-driven architecture
+- Object-Oriented Programming
+- Modular source code organization
+- Desktop application workflow
+- Static data simulation
+- Academic project focused on GUI development
+
+---
+
+# 🖼️ Application Showcase
+
+## Landing Page
+
+![Landing](screenshots/01-home.png)
+
+---
+
+## User Login
+
+![User Login](screenshots/02-user-login.png)
+
+---
+
+## Main Menu
+
+![Main Menu](screenshots/03-main-menu.png)
+
+---
+
+## Browse Courses
+
+![Courses 1](screenshots/04-courses-page-1.png)
+
+![Courses 2](screenshots/05-courses-page-2.png)
+
+---
+
+## Course Details
+
+![Course Details](screenshots/06-course-details.png)
+
+---
+
+## Payment Options
+
+![Payment](screenshots/07-payment-options.png)
+
+---
+
+## Shopping Cart
+
+![Cart](screenshots/08-shopping-cart.png)
+
+---
+
+## Admin Login
+
+![Admin Login](screenshots/09-admin-login.png)
+
+---
+
+## Admin Dashboard
+
+![Dashboard](screenshots/10-admin-dashboard.png)
+
+---
+
+## Add User
+
+![Add User](screenshots/11-add-user.png)
+
+---
+
+## User Management
+
+![User Management](screenshots/12-user-management.png)
+
+---
+
+## Reviews
+
+![Reviews](screenshots/13-reviews.png)
+
+---
+
+# 🏗 Project Structure
+
+```
+codingvibes-java-gui/
+│
+├── assets/
+├── src/
+│   ├── Data/
+│   ├── Interfaces/
+│   ├── Photos/
+│   ├── SourceFiles/
+│   └── Start.java
+│
+├── Screenshots/
+├── LICENSE
+└── README.md
+```
+
+---
+
+# 🛠 Technologies Used
+
 - Java
-- Java Swing / AWT
-- Object-Oriented Programming (OOP) concepts
-- Event-driven programming
+- Java Swing
+- Java AWT
+- Object-Oriented Programming (OOP)
+- Event-Driven Programming
 
 ---
 
-## ▶ How to Run
-1. Open the project in any Java IDE (IntelliJ IDEA, Eclipse, NetBeans)
-2. Navigate to the `src/main/` directory
-3. Compile and run `Start.java`
-4. The CodingVibes application window will launch
+# ▶️ Getting Started
+
+## Prerequisites
+
+- Java JDK 17 or later
+- IntelliJ IDEA / Eclipse / NetBeans (recommended)
 
 ---
 
-## ℹ Notes
-- This project is a **simulation-based academic application**
-- No real payments, purchases, emails, or external communications are performed
-- Customer reviews and contact information are static and predefined
-- The project represents foundational experience in Java Swing and application logic design
+## Run the Project
+
+Clone the repository
+
+```bash
+git clone https://github.com/Saji-d/codingvibes-java-gui.git
+```
+
+Navigate into the project
+
+```bash
+cd codingvibes-java-gui
+```
+
+Open the project in your preferred Java IDE.
+
+Run:
+
+```
+Start.java
+```
+
+The application will launch as a desktop GUI.
 
 ---
 
-## 👤 Author
-**Sajidur Rahman Sajid**  
-BSc in Computer Science & Engineering  
-Final-year undergraduate student
+# 📚 Learning Outcomes
+
+This project helped reinforce concepts including:
+
+- Java Swing GUI Development
+- Object-Oriented Programming
+- Event Handling
+- Desktop Application Design
+- User Interface Navigation
+- Modular Programming
+- Academic Software Engineering Practices
+
+---
+
+# ⚠️ Disclaimer
+
+This application is created solely for educational purposes.
+
+The following features are **simulations only**:
+
+- Payments
+- Shopping Cart
+- Customer Reviews
+- Contact Information
+- User Data
+
+No real financial transactions, authentication services, or online communication are performed.
+
+---
+
+# 👨‍💻 Author
+
+**Sajidur Rahman Sajid**
+
+B.Sc. in Computer Science & Engineering
+
+American International University-Bangladesh (AIUB)
