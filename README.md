@@ -19,7 +19,7 @@ The project demonstrates **Object-Oriented Programming (OOP)** principles, **eve
 
 ## 👤 User Module
 
-- Secure user login interface
+- User login (credentials stored in plain-text files)
 - Browse programming courses
 - Course detail pages
 - Add courses to shopping cart
@@ -52,7 +52,7 @@ The project demonstrates **Object-Oriented Programming (OOP)** principles, **eve
 - Object-Oriented Programming
 - Modular source code organization
 - Desktop application workflow
-- Static data simulation
+- Flat-file persistence (Data/*.txt)
 - Academic project focused on GUI development
 
 ---
