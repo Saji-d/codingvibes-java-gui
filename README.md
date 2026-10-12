@@ -90,7 +90,7 @@ It is an **academic project** made for a university course to practise object-or
 
 ## ◈ Architecture
 
-Each screen is a `JFrame` in the `SourceFiles` package. Screens open each other directly, and the only shared state is a static cart list and the text files under `Data/`.
+Each screen is a `JFrame` in the `SourceFiles` package. Screens open each other directly. The only shared state is a static cart list and the text files under `Data/`.
 
 ```mermaid
 flowchart LR
