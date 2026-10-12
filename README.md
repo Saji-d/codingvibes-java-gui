@@ -22,7 +22,6 @@
     <a href="#-tech-stack">Tech Stack</a> ·
     <a href="#-getting-started">Getting Started</a> ·
     <a href="#-project-structure">Structure</a> ·
-    <a href="#-roadmap">Roadmap</a> ·
     <a href="#-author">Author</a>
   </p>
 </div>
@@ -151,8 +150,7 @@ src/main/Start.java   (opens the Page landing screen)
 
 ## ◈ Project Structure
 
-<details>
-<summary>Show folder tree</summary>
+Source in `src/` (one class per screen), with images in `assets/` and `docs/`.
 
 ```text
 codingvibes-java-gui/
@@ -166,25 +164,12 @@ codingvibes-java-gui/
 └── README.md
 ```
 
-</details>
-
-<img src="assets/divider.svg" width="100%" alt="">
-
-## ◈ Roadmap
-
-- [x] Admin and user entry, sign-up and login
-- [x] Course catalogue, detail pages and in-memory cart
-- [x] Simulated payment flow and admin user management
-- [ ] Hash passwords instead of storing them as plain text
-- [ ] Replace text files with a real database
-- [ ] Persist the cart and order history
-- [ ] Ship a `Data/` template and a build script so it runs out of the box
-
 <img src="assets/divider.svg" width="100%" alt="">
 
 ## ◈ Author
 
-**Sajidur Rahman Sajid**: Full-Stack Developer and AI engineer from Dhaka. BSc in CSE at American International University-Bangladesh (AIUB).
+**Sajidur Rahman Sajid**: Full-Stack Developer and AI engineer from Dhaka.<br>
+BSc in CSE at American International University-Bangladesh (AIUB).
 
 <p>
   <a href="https://www.sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=flat-square&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"></a>
