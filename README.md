@@ -1,237 +1,196 @@
-# CodingVibes – Java Swing Course Management System
+<div align="center">
+  <img src="assets/banner.svg" alt="CodingVibes banner" width="100%">
 
-<p align="center">
+  <p><code>A Java Swing desktop course storefront with admin and user flows, built as an AIUB course project.</code></p>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Swing](https://img.shields.io/badge/Java%20Swing-GUI-blue?style=for-the-badge)
-![OOP](https://img.shields.io/badge/OOP-Object%20Oriented-success?style=for-the-badge)
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  <p>
+    <a href="https://github.com/Saji-d/codingvibes-java-gui"><img src="https://img.shields.io/badge/SOURCE-GitHub-0B0E1A?style=for-the-badge&logo=github&logoColor=EEF0FA" alt="Source on GitHub"></a>
+    <img src="https://img.shields.io/badge/STATUS-Academic%20project-0B0E1A?style=for-the-badge&color=fbbf24" alt="Status academic project">
+    <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-0B0E1A?style=for-the-badge&color=8B7CF6" alt="MIT licence"></a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Java-0B0E1A?style=flat-square&logo=openjdk&logoColor=8B7CF6" alt="Java">
+    <img src="https://img.shields.io/badge/Swing%20and%20AWT-0B0E1A?style=flat-square&logo=openjdk&logoColor=9B8CFA" alt="Swing and AWT">
+    <img src="https://img.shields.io/badge/Flat--file%20storage-0B0E1A?style=flat-square&logo=files&logoColor=9B8CFA" alt="Flat-file storage">
+  </p>
 
-</p>
+  <p>
+    <a href="#-overview">Overview</a> ·
+    <a href="#-highlights">Highlights</a> ·
+    <a href="#-preview">Preview</a> ·
+    <a href="#-architecture">Architecture</a> ·
+    <a href="#-tech-stack">Tech Stack</a> ·
+    <a href="#-getting-started">Getting Started</a> ·
+    <a href="#-project-structure">Structure</a> ·
+    <a href="#-roadmap">Roadmap</a> ·
+    <a href="#-author">Author</a>
+  </p>
+</div>
 
-A desktop-based **Course Management System** developed using **Java Swing** as part of academic coursework. The application simulates the workflow of an online learning platform where users can browse programming courses, manage a shopping cart, simulate purchases, and where administrators can manage users through a dedicated dashboard.
+<img src="assets/divider.svg" width="100%" alt="">
 
-The project demonstrates **Object-Oriented Programming (OOP)** principles, **event-driven programming**, modular GUI design, and role-based application flow.
+## ◈ Overview
 
----
+CodingVibes is a desktop storefront for programming courses, written in plain Java Swing. A visitor picks the **Admin** or **User** entry on the landing page, signs up or logs in, browses language courses, fills a cart and walks through a payment screen. Admins get a separate dashboard to add and remove users and add developers.
 
-# ✨ Features
+It is an **academic project** made for a university course to practise object-oriented design and event-driven GUI programming. Everything commercial is a simulation: there is no real payment, no database and no network access. Accounts live in plain-text files, so it is not a model of secure authentication.
 
-## 👤 User Module
+<img src="assets/divider.svg" width="100%" alt="">
 
-- User login (credentials stored in plain-text files)
-- Browse programming courses
-- Course detail pages
-- Add courses to shopping cart
-- Remove courses from cart
-- Simulated checkout process
-- Multiple payment options
-- Contact page
-- About section
-- Customer reviews page
-- Responsive menu-driven navigation
+## ◈ Highlights
 
----
+<table>
+  <tr>
+    <td width="33%" valign="top"><b>Two entry roles</b><br>Landing page splits into Admin and User login, plus a user sign-up form.</td>
+    <td width="33%" valign="top"><b>Course catalogue</b><br>Two catalogue pages and a detail window per language (Java, Python, C++, Kotlin, Go and more).</td>
+    <td width="33%" valign="top"><b>Shopping cart</b><br>Add and remove courses; the cart is held in memory for the session.</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>Simulated payments</b><br>Card, bKash, Nagad, Rocket and generic mobile payment screens ending in a confirmation page.</td>
+    <td valign="top"><b>Admin dashboard</b><br>Add users, remove users, view registered users and add developers.</td>
+    <td valign="top"><b>Content pages</b><br>About us, vision and mission, team, blog, reviews, contact and special services.</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>Flat-file storage</b><br>User and admin records are appended to and read from <code>Data/*.txt</code> with <code>java.io</code>.</td>
+    <td valign="top"><b>Plain Swing, no dependencies</b><br>Only the JDK is needed: Swing, AWT and the standard library.</td>
+    <td valign="top"><b>About 7.8k lines</b><br>One class per screen across 54 Java files, split into <code>main</code> and <code>interfaces</code>.</td>
+  </tr>
+</table>
 
-## 🛡️ Admin Module
+<img src="assets/divider.svg" width="100%" alt="">
 
-- Separate administrator login
-- Admin dashboard
-- Add new users
-- Remove existing users
-- View registered users
-- Add developers
-- User information management
+## ◈ Preview
 
----
+<div align="center">
+  <img src="docs/preview.webp" alt="CodingVibes landing screen" width="85%">
+</div>
 
-## ⚙️ Application Highlights
+<br>
 
-- Java Swing graphical interface
-- Event-driven architecture
-- Object-Oriented Programming
-- Modular source code organization
-- Desktop application workflow
-- Flat-file persistence (Data/*.txt)
-- Academic project focused on GUI development
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/user-login.webp" alt="User login"><br><sub><b>User login</b></sub></td>
+    <td width="50%"><img src="docs/screenshots/main-menu.webp" alt="Main menu"><br><sub><b>Main menu</b></sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/courses.webp" alt="Course catalogue"><br><sub><b>Course catalogue</b></sub></td>
+    <td><img src="docs/screenshots/course-details.webp" alt="Course details"><br><sub><b>Course details</b></sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/shopping-cart.webp" alt="Shopping cart"><br><sub><b>Shopping cart</b></sub></td>
+    <td><img src="docs/screenshots/payment-options.webp" alt="Payment options"><br><sub><b>Payment options (simulated)</b></sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/admin-dashboard.webp" alt="Admin dashboard"><br><sub><b>Admin dashboard</b></sub></td>
+    <td><img src="docs/screenshots/user-management.webp" alt="User management"><br><sub><b>User management</b></sub></td>
+  </tr>
+</table>
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-# 🖼️ Application Showcase
+## ◈ Architecture
 
-## Landing Page
+Each screen is a `JFrame` in the `SourceFiles` package. Screens open each other directly, and the only shared state is a static cart list and the text files under `Data/`.
 
-![Landing](screenshots/01-home.png)
-
----
-
-## User Login
-
-![User Login](screenshots/02-user-login.png)
-
----
-
-## Main Menu
-
-![Main Menu](screenshots/03-main-menu.png)
-
----
-
-## Browse Courses
-
-![Courses 1](screenshots/04-courses-page-1.png)
-
-![Courses 2](screenshots/05-courses-page-2.png)
-
----
-
-## Course Details
-
-![Course Details](screenshots/06-course-details.png)
-
----
-
-## Payment Options
-
-![Payment](screenshots/07-payment-options.png)
-
----
-
-## Shopping Cart
-
-![Cart](screenshots/08-shopping-cart.png)
-
----
-
-## Admin Login
-
-![Admin Login](screenshots/09-admin-login.png)
-
----
-
-## Admin Dashboard
-
-![Dashboard](screenshots/10-admin-dashboard.png)
-
----
-
-## Add User
-
-![Add User](screenshots/11-add-user.png)
-
----
-
-## User Management
-
-![User Management](screenshots/12-user-management.png)
-
----
-
-## Reviews
-
-![Reviews](screenshots/13-reviews.png)
-
----
-
-# 🏗 Project Structure
-
+```mermaid
+flowchart LR
+  Start["Start.java"] --> Page["Page (landing)"]
+  Page --> UL["UserLogin / UserSignup"]
+  Page --> AL["AdminLogin"]
+  UL --> Menu["HomePage (main menu)"]
+  Menu --> C1["Courses1 / Courses2"]
+  C1 --> Det["Language detail screens"]
+  Det --> Cart["CartPage (static list)"]
+  Cart --> Pay["PaymentOptions"]
+  Pay --> P1["Card / bKash / Nagad / Rocket / Mobile"]
+  P1 --> Fin["FinishingPage"]
+  AL --> Dash["AdminDashboard"]
+  Dash --> Add["AddingNewUser / AddingDeveloper"]
+  Dash --> Rem["RemoveUserPage / UserInfoPage"]
+  UL <--> Files[("Data/User_Data.txt")]
+  Add --> Files
+  Rem <--> Files
+  AL <--> Admin[("Data/Admin_Data.txt")]
+  Add --> Admin
 ```
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## ◈ Tech Stack
+
+| Layer | Technologies | Purpose |
+| --- | --- | --- |
+| Language | Java (JDK 17 or later recommended) | Application logic and OOP structure |
+| GUI | Swing and AWT | Windows, tables, buttons, event listeners |
+| Storage | `java.io` text files | User and admin records under `Data/` |
+| Assets | PNG and JPG in `assets/` | Backgrounds, logos and language icons |
+| Tooling | Any Java IDE | IntelliJ IDEA, Eclipse or NetBeans |
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## ◈ Getting Started
+
+**Prerequisites:** a JDK (17 or later is recommended) and an IDE or the `javac` command line.
+
+```bash
+git clone https://github.com/Saji-d/codingvibes-java-gui.git
+cd codingvibes-java-gui
+```
+
+The screens read images and data files with relative paths, so run from a working directory that contains `assets/` and a `Data/` folder with `User_Data.txt` and `Admin_Data.txt`. The `Data/` folder is not tracked in this repository, so create it and add an admin record before using the admin login. Then open the project in your IDE and run the entry point:
+
+```text
+src/main/Start.java   (opens the Page landing screen)
+```
+
+> The public class in `Start.java` is declared as `start` in lower case. If your compiler rejects the file name mismatch, rename the class to `Start`.
+
+> Payments, the cart, reviews, contact details and user data are simulations for learning only.
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## ◈ Project Structure
+
+<details>
+<summary>Show folder tree</summary>
+
+```text
 codingvibes-java-gui/
-│
-├── assets/
+├── assets/            backgrounds, logos, language icons, banner
+├── docs/              preview image and README screenshots
+├── screenshots/       original full-size screenshots
 ├── src/
-│   ├── Data/
-│   ├── Interfaces/
-│   ├── Photos/
-│   ├── SourceFiles/
-│   └── Start.java
-│
-├── Screenshots/
+│   ├── interfaces/    login, sign-up and add-user form interfaces
+│   └── main/          one class per screen (courses, cart, payments, admin)
 ├── LICENSE
 └── README.md
 ```
 
----
+</details>
 
-# 🛠 Technologies Used
+<img src="assets/divider.svg" width="100%" alt="">
 
-- Java
-- Java Swing
-- Java AWT
-- Object-Oriented Programming (OOP)
-- Event-Driven Programming
+## ◈ Roadmap
 
----
+- [x] Admin and user entry, sign-up and login
+- [x] Course catalogue, detail pages and in-memory cart
+- [x] Simulated payment flow and admin user management
+- [ ] Hash passwords instead of storing them as plain text
+- [ ] Replace text files with a real database
+- [ ] Persist the cart and order history
+- [ ] Ship a `Data/` template and a build script so it runs out of the box
 
-# ▶️ Getting Started
+<img src="assets/divider.svg" width="100%" alt="">
 
-## Prerequisites
+## ◈ Author
 
-- Java JDK 17 or later
-- IntelliJ IDEA / Eclipse / NetBeans (recommended)
+**Sajidur Rahman Sajid**: Full-Stack Developer and AI engineer from Dhaka. BSc in CSE at American International University-Bangladesh (AIUB).
 
----
+<p>
+  <a href="https://www.sajidur.me"><img src="https://img.shields.io/badge/Portfolio-0B0E1A?style=flat-square&logo=googlechrome&logoColor=9B8CFA" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/sajidur-rahman-sajid/"><img src="https://img.shields.io/badge/LinkedIn-0B0E1A?style=flat-square&logo=linkedin&logoColor=8B7CF6" alt="LinkedIn"></a>
+  <a href="https://github.com/Saji-d"><img src="https://img.shields.io/badge/GitHub-0B0E1A?style=flat-square&logo=github&logoColor=EEF0FA" alt="GitHub"></a>
+  <a href="mailto:sajidsajidurrahman99@gmail.com"><img src="https://img.shields.io/badge/Email-0B0E1A?style=flat-square&logo=gmail&logoColor=9B8CFA" alt="Email"></a>
+</p>
 
-## Run the Project
-
-Clone the repository
-
-```bash
-git clone https://github.com/Saji-d/codingvibes-java-gui.git
-```
-
-Navigate into the project
-
-```bash
-cd codingvibes-java-gui
-```
-
-Open the project in your preferred Java IDE.
-
-Run:
-
-```
-Start.java
-```
-
-The application will launch as a desktop GUI.
-
----
-
-# 📚 Learning Outcomes
-
-This project helped reinforce concepts including:
-
-- Java Swing GUI Development
-- Object-Oriented Programming
-- Event Handling
-- Desktop Application Design
-- User Interface Navigation
-- Modular Programming
-- Academic Software Engineering Practices
-
----
-
-# ⚠️ Disclaimer
-
-This application is created solely for educational purposes.
-
-The following features are **simulations only**:
-
-- Payments
-- Shopping Cart
-- Customer Reviews
-- Contact Information
-- User Data
-
-No real financial transactions, authentication services, or online communication are performed.
-
----
-
-# 👨‍💻 Author
-
-**Sajidur Rahman Sajid**
-
-B.Sc. in Computer Science & Engineering
-
-American International University-Bangladesh (AIUB)
+<sub>A learning project, shared as it was built. Released under the MIT licence.</sub>
